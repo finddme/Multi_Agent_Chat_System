@@ -30,7 +30,7 @@ st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
 # async def run_convo():
 def run_convo():
     st.title(":blue[Search / Chat with finddme]")
-    user_input = st.text_input('msg')
+    user_input = st.text_input('message')
     # submitted = st.form_submit_button('Send')
     
     if user_input:
