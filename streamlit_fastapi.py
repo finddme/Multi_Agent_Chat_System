@@ -13,7 +13,8 @@ import json
 
 # async def get_response(user_input):
 def get_response(user_input):
-    client="http://192.168.2.186:8088/chat"
+    # client="http://192.168.2.186:8088/chat"
+    client="http://eleven.acryl.ai:37808/chat"
     headers = { 'Content-Type': 'application/json' }
     user_input={"user_input": user_input}
     response = requests.request("POST", client , headers=headers, data=json.dumps(user_input))
