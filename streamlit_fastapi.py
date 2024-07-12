@@ -34,10 +34,8 @@ user_input = st.text_input('msg')
 if user_input:
     with st.spinner("Processing..."):
         try:
-            # app = RemoteRunnable("http://192.168.2.186:8088/chat")
-            # for output in app.stream({"input": input_text}):
-            # input_text={"question": input_text}
-            answer, source = await get_response(user_input)
+            # answer, source = await get_response(user_input)
+            answer, source = get_response(user_input)
             source= [s["source_title"].split("\n")[0] if s["source_title"] != " " else " " for s in source]
             if source[0] !=" ":
                 answer+= "\n\nsources->\n"+"\n".join(source)
