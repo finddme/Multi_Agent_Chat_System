@@ -7,7 +7,7 @@ import streamlit as st
 import requests
 import random
 import time
-from streamlit_chat import message
+# from streamlit_chat import message
 from langserve import RemoteRunnable
 from pprint import pprint
 import json
