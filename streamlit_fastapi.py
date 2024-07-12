@@ -25,8 +25,19 @@ def get_response(user_input):
 def clear_chat_history():
     st.session_state.messages = [{"role": "assistant", "content": "Hi! How can I help you?"}]
 
-st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
+# Inject custom CSS to set the width of the sidebar
+st.markdown(
+    """
+    <style>
+        section[data-testid="stSidebar"] {
+            width: 50px !important; # Set the width to your desired value
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
+st.sidebar.button('Clear History', on_click=clear_chat_history)
 # async def run_convo():
 def run_convo():
     st.title(":blue[Search / Chat with finddme]")
