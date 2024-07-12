@@ -27,26 +27,28 @@ def clear_chat_history():
 st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
 
 # async def run_convo():
-st.title(":blue[Search / Chat with finddme]")
-user_input = st.text_input('msg')
-# submitted = st.form_submit_button('Send')
-
-if user_input:
-    with st.spinner("Processing..."):
-        try:
-            # answer, source = await get_response(user_input)
-            answer, source = get_response(user_input)
-            source= [s["source_title"].split("\n")[0] if s["source_title"] != " " else " " for s in source]
-            if source[0] !=" ":
-                answer+= "\n\nsources->\n"+"\n".join(source)
-            st.write(str(answer))
-        
-        except Exception as e:
-            st.error(f"Error: {e}")
+def run_convo():
+    st.title(":blue[Search / Chat with finddme]")
+    user_input = st.text_input('msg')
+    # submitted = st.form_submit_button('Send')
+    
+    if user_input:
+        with st.spinner("Processing..."):
+            try:
+                # answer, source = await get_response(user_input)
+                answer, source = get_response(user_input)
+                source= [s["source_title"].split("\n")[0] if s["source_title"] != " " else " " for s in source]
+                if source[0] !=" ":
+                    answer+= "\n\nsources->\n"+"\n".join(source)
+                st.write(str(answer))
+            
+            except Exception as e:
+                st.error(f"Error: {e}")
 # ===============================================================================================================
 
-# if __name__ == '__main__':
+if __name__ == '__main__':
     # asyncio.run(run_convo())
+    run_convo()
 
 # ===============================================================================================================
 
