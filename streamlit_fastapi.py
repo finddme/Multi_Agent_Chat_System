@@ -8,7 +8,7 @@ import requests
 import random
 import time
 # from streamlit_chat import message
-from langserve import RemoteRunnable
+# from langserve import RemoteRunnable
 from pprint import pprint
 import json
 from streamlit_extras.colored_header import colored_header
