@@ -51,7 +51,7 @@ async def run_convo():
                 # input_text={"question": input_text}
                 answer, source = await get_response(user_input)
                 source= [s["source_title"].split("\n")[0] if s["source_title"] != " " else " " for s in source]
-                if source !=" ":
+                if source[0] !=" ":
                     answer+= "\n\nsources->\n"+"\n".join(source)
                 st.write(str(answer))
             
