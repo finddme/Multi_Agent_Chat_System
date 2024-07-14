@@ -37,7 +37,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.sidebar.button('Clear History', on_click=clear_chat_history)
+# st.sidebar.button('Clear History', on_click=clear_chat_history)
 # async def run_convo():
 def run_convo():
     st.title(":blue[Search / Chat with finddme]")
