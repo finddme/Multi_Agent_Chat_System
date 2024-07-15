@@ -59,7 +59,7 @@ def run_convo():
     #             정보를 요구하는 질문이 아닐 경우 <strong>일상 대화 chatbot 버전</strong>으로 사용할 수 있습니다.</p>]""", 
     #             unsafe_allow_html=True 
     #             )
-    user_input = st.text_input('{"LLM/NLP/AI":"블로그 포스트", "일반 질문":"Web search", "일상 대화":"chat 버전"}')
+    user_input = st.text_input('검색어에 따라 3 가지 pipeline으로 나뉘어 결과를 생성합니다. (1)LLM/NLP/AI->블로그 포스트 RAG (2)일반 질문->Web search RAG (3)일상 대화->일반 chatbot')
     # submitted = st.form_submit_button('Send')
     
     if user_input:
