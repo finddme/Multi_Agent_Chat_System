@@ -59,7 +59,7 @@ def run_convo():
     #             정보를 요구하는 질문이 아닐 경우 <strong>일상 대화 chatbot 버전</strong>으로 사용할 수 있습니다.</p>]""", 
     #             unsafe_allow_html=True 
     #             )
-    user_input = st.text_input('검색어를 입력하세요😎')
+    user_input = st.text_input('검색어를 입력하세요😎:orange[*Query Router | Hallucination Grader | Reranker | Web search*]')
     # submitted = st.form_submit_button('Send')
     
     if user_input:
