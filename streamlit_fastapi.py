@@ -49,7 +49,7 @@ def run_convo():
         font-size:18px !important;
         color: #191970;
         margin-top: 0%;
-        font-family: "Times New Roman", Times, serif;
+        font-family: Arial, Helvetica, sans-serif;
     }
     </style>
     """, unsafe_allow_html=True)
