@@ -47,7 +47,7 @@ def run_convo():
     .custom-font {
         font-weight: bold;
         font-size:18px !important;
-        color: #191970;
+        color: #1847A6;
         margin-top: 0%;
         font-family: Arial, Helvetica, sans-serif;
     }
