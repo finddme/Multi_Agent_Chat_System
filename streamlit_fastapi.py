@@ -41,6 +41,23 @@ st.markdown(
 # async def run_convo():
 def run_convo():
     st.title(":blue[Search / Chat with finddme]")
+    st.markdown(":orange[*Query Router | Hallucination Grader | Reranker | Web search*]", 
+                unsafe_allow_html=True 
+                )
+    st.markdown("""
+    <style>
+    .small-font {
+        font-size:12px !important;
+        color:gray;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    st.markdown("""<p class='small-font'>인공지능/LLM/NLP와 관련된 질문은 본 <strong>블로그 포스트</strong>를 기반으로 답변하고, 
+                일반적인 질문은 <strong>web search</strong>를 통해 답변합니다.
+                정보를 요구하는 질문이 아닐 경우 <strong>일상 대화 chatbot 버전</strong>으로 사용할 수 있습니다.</p>""",
+                unsafe_allow_html=True)
+    # st.markdown("<p class='small-font'>정보를 요구하는 질문이 아닐 경우 일상 대화 chatbot 버전으로 사용할 수 있습니다.</p>",unsafe_allow_html=True)
+    st.markdown('---')
     user_input = st.text_input('message')
     # submitted = st.form_submit_button('Send')
     
