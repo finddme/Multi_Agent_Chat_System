@@ -48,7 +48,7 @@ def run_convo():
         with st.spinner("Processing..."):
             try:
                 # answer, source = await get_response(user_input)
-                answer, source = get_response(user_input)
+                # answer, source = get_response(user_input)
                 source= [s["source_title"].split("\n")[0] if s["source_title"] != " " else " " for s in source]
                 if source[0] !=" ":
                     answer+= "\n\nsources->\n"+"\n".join(source)
