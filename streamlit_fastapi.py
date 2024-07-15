@@ -46,8 +46,8 @@ def run_convo():
     <style>
     .custom-font {
         font-weight: bold;
-        font-size:20px !important;
-        color:7CEEE6;
+        font-size:18px !important;
+        color: #7CEEE6;
         margin-top: 0%;
     }
     </style>
