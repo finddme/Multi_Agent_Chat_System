@@ -42,11 +42,15 @@ st.markdown(
 def run_convo():
     # st.title(""":blue[Search / Chat with finddme]""")
     st.title(""":blue[RAG 기반 블로그 검색창]""")
+    st.markdown("""<p class='custon-font'>RAG 기반 블로그 검색창</p>""", 
+                unsafe_allow_html=True 
+                )
     st.markdown("""
     <style>
-    .small-font {
-        font-size:12px !important;
-        color:gray;
+    .custon-font {
+        font-weight: bold;
+        font-size:20px !important;
+        color:7CEEE6;
         margin-top: 0%;
     }
     </style>
