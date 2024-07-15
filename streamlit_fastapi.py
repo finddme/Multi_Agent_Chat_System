@@ -41,7 +41,7 @@ st.markdown(
 # async def run_convo():
 def run_convo():
     # st.title(""":blue[Search / Chat with finddme]""")
-    st.title(""":blue[] :orange[*Query Router | Hallucination Grader | Reranker | Web search*""")
+    st.title(""":blue[블로그 검색창] :orange[*Query Router | Hallucination Grader | Reranker | Web search*""")
     st.markdown("""
     <style>
     .small-font {
@@ -59,7 +59,7 @@ def run_convo():
     #             정보를 요구하는 질문이 아닐 경우 <strong>일상 대화 chatbot 버전</strong>으로 사용할 수 있습니다.</p>]""", 
     #             unsafe_allow_html=True 
     #             )
-    user_input = st.text_input('블로그 검색창')
+    user_input = st.text_input('{"LLM/NLP/AI":"블로그 포스트", "일반 질문":"Web search", "일상 대화":"chat 버전"}')
     # submitted = st.form_submit_button('Send')
     
     if user_input:
