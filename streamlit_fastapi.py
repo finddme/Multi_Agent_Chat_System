@@ -40,7 +40,8 @@ st.markdown(
 # st.sidebar.button('Clear History', on_click=clear_chat_history)
 # async def run_convo():
 def run_convo():
-    st.title(""":blue[Search / Chat with finddme]""")
+    # st.title(""":blue[Search / Chat with finddme]""")
+    st.title(""":blue[] :orange[*Query Router | Hallucination Grader | Reranker | Web search*""")
     st.markdown("""
     <style>
     .small-font {
@@ -58,7 +59,7 @@ def run_convo():
     #             정보를 요구하는 질문이 아닐 경우 <strong>일상 대화 chatbot 버전</strong>으로 사용할 수 있습니다.</p>]""", 
     #             unsafe_allow_html=True 
     #             )
-    user_input = st.text_input('message')
+    user_input = st.text_input('블로그 검색창')
     # submitted = st.form_submit_button('Send')
     
     if user_input:
