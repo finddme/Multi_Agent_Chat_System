@@ -47,8 +47,9 @@ def run_convo():
     .custom-font {
         font-weight: bold;
         font-size:18px !important;
-        color: #7CEEE6;
+        color: #add8e6;
         margin-top: 0%;
+        font-family: "Lucida Console", "Courier New", monospace;
     }
     </style>
     """, unsafe_allow_html=True)
