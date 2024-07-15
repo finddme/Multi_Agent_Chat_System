@@ -41,13 +41,10 @@ st.markdown(
 # async def run_convo():
 def run_convo():
     # st.title(""":blue[Search / Chat with finddme]""")
-    st.title(""":blue[RAG 기반 블로그 검색창]""")
-    st.markdown("""<p class='custon-font'>RAG 기반 블로그 검색창</p>""", 
-                unsafe_allow_html=True 
-                )
+    # st.title(""":blue[RAG 기반 블로그 검색창]""")
     st.markdown("""
     <style>
-    .custon-font {
+    .custom-font {
         font-weight: bold;
         font-size:20px !important;
         color:7CEEE6;
@@ -55,6 +52,10 @@ def run_convo():
     }
     </style>
     """, unsafe_allow_html=True)
+    st.markdown("""<p class='custom-font'>RAG 기반 블로그 검색창</p>""", 
+                unsafe_allow_html=True 
+                )
+
     st.markdown(""":gray[3 pipeline (1)LLM/NLP/AI->블로그 포스트 RAG (2)일반 질문->Web search RAG (3)일상 대화->일반 chatbot]""", 
                 unsafe_allow_html=True 
                 )
