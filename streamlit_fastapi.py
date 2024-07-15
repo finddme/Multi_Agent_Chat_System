@@ -41,7 +41,7 @@ st.markdown(
 # async def run_convo():
 def run_convo():
     # st.title(""":blue[Search / Chat with finddme]""")
-    st.title(""":blue[블로그 검색창] :orange[*Query Router | Hallucination Grader | Reranker | Web search*""")
+    st.title(""":blue[RAG 기반 블로그 검색창]""")
     st.markdown("""
     <style>
     .small-font {
