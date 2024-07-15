@@ -72,7 +72,7 @@ def run_convo():
                 st.write(str(answer))
             
             except Exception as e:
-                error_msg="Need to check port-forwarding status: Need to verify the server running FastAPI (port 8088)"
+                error_msg="Need to check port-forwarding status: Need to verify the server running FastAPI (port 7808)"
                 st.error(f"Error: {error_msg}")
                 # st.error(f"Error: {e}")
 # ===============================================================================================================
