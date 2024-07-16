@@ -68,7 +68,7 @@ def run_convo():
     # st.markdown("""<p class='custom-font2'>3 pipeline (1)LLM/NLP/AI->블로그 포스트 RAG (2)일반 질문->Web search RAG (3)일상 대화->일반 chatbot</p>""", 
     #             unsafe_allow_html=True 
     #             )
-    user_input = st.text_input("""😎 RAG 기반 블로그 검색창 | 검색어를 입력하세요.\
+    user_input = st.text_input("""😎 RAG 기반 블로그 검색창 | 검색어를 입력하세요.\\
                                 :orange[*Query Router | Hallucination Grader | Reranker | Web search*]
                                 """)
     # submitted = st.form_submit_button('Send')
