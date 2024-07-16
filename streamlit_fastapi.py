@@ -69,6 +69,7 @@ def run_convo():
     #             unsafe_allow_html=True 
     #             )
     user_input = st.text_input("""😎 RAG 기반 블로그 검색창 | 검색어를 입력하세요.
+    
                                 :orange[*Query Router | Hallucination Grader | Reranker | Web search*]""")
     # submitted = st.form_submit_button('Send')
     
