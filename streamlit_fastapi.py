@@ -56,10 +56,10 @@ def run_convo():
     st.markdown("""
     <style>
     .custom-font2 {
-        font-size:12px !important;
-        color: gray;
-        margin-top: 0%;
-        font-family: Arial, Helvetica, sans-serif;
+        # font-size:12px !important;
+        color: #D97757;
+        # margin-top: 0%;
+        # font-family: Arial, Helvetica, sans-serif;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -69,7 +69,7 @@ def run_convo():
     #             unsafe_allow_html=True 
     #             )
     user_input = st.text_input("""😎 RAG 기반 블로그 검색창 | 검색어를 입력하세요.\\
-                                :#D97757[*Query Router | Hallucination Grader | Reranker | Web search*]\\
+                                <p class='custom-font2'>*Query Router | Hallucination Grader | Reranker | Web search*</p>\\
                                 :yellow[Route the query into 3 pipelines : **Blog post retrieval / Web search / Casual chat**]
                                 """)
     # submitted = st.form_submit_button('Send')
