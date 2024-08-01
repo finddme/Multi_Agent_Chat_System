@@ -70,7 +70,8 @@ def run_convo():
     #             unsafe_allow_html=True 
     #             )
     user_input = st.text_input("""검색어를 입력하세요.\\
-                                :orange[Route the query into 3 pipelines : **Blog post retrieval / Web search / Casual chat**]
+                                Route the query into 3 pipelines : 
+                                :orange[**Blog post retrieval / Web search / Casual chat**]
                                 """)
     # submitted = st.form_submit_button('Send')
     
