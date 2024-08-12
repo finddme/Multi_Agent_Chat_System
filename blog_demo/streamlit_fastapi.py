@@ -76,7 +76,7 @@ def run_convo():
     # submitted = st.form_submit_button('Send')
     
     if user_input:
-        with st.spinner("Processing..."):
+        with st.spinner("Generating response..."):
             try:
                 # answer, source = await get_response(user_input)
                 answer, source = get_response(user_input)
