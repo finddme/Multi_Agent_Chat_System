@@ -70,7 +70,8 @@ async def run_convo():
                     st.image(io.BytesIO(img).getvalue(), caption="Sunrise by the mountains")
             except Exception as e:
                 st.error(f"Error: {e}")
-
+    st.image("https://finddme.github.io/public/react1.png", caption="search box pipeline")
+    
 if __name__ == '__main__':
     asyncio.run(run_convo())
 
