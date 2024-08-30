@@ -33,7 +33,7 @@ async def run_convo():
                 :orange[**Law | Ai | conversation | web search | realtime | image generation**]""", 
                 unsafe_allow_html=True 
                 )
-    user_input = st.text_input()
+    user_input = st.text_input('')
 
     if user_input:
         with st.spinner("Processing..."):
