@@ -30,7 +30,7 @@ async def run_convo():
     </style>
     """, unsafe_allow_html=True)
     st.markdown("""검색어를 입력하세요.\\
-                :orange[**Law | Ai | conversation | web search | realtime | image**]""", 
+                :orange[**Law | Ai | conversation | web search | realtime | image generation**]""", 
                 unsafe_allow_html=True 
                 )
     user_input = st.text_input('')
