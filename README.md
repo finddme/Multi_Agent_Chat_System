@@ -9,7 +9,7 @@
   - Casual converstaion
   - Image generation
     
-<center><img width="1000" src="./readme_img/react1.png"></center>
+<center><img width="1000" src="./readme_img/react2.png"></center>
 
 ## Include REDO pipeline
 
