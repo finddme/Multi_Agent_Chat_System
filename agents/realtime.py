@@ -16,17 +16,20 @@ def get_news_with_query(keyword):
     naver_news_links=[]
     
     def parse_page(soup):
-        for info in soup.find_all(class_='news_info'):
-            date=info.find_all('span',{"class":"info"})[1]
-            news_release_date.append(date.get_text().strip())
+        for idx,info in enumerate(soup.find_all(class_='news_info')):
+            if idx<5:
+                date=info.find_all('span',{"class":"info"})[1]
+                news_release_date.append(date.get_text().strip())
 
-            naver_news_link=info.find_all('a', {"class":"info"},href=True)[-1]
-            naver_news_links.append(naver_news_link['href'])
+                naver_news_link=info.find_all('a', {"class":"info"},href=True)[-1]
+                naver_news_links.append(naver_news_link['href'])
             
-        for title in soup.find_all(class_='news_tit'):
-            news_titles.append(title.get_text().strip())
-        for content in soup.find_all(class_='news_dsc'):
-            news_contents.append(content.get_text().strip())
+        for tit_idx,title in enumerate(soup.find_all(class_='news_tit')):
+            if tit_idx<5:
+                news_titles.append(title.get_text().strip())
+        for con_idx,content in enumerate(soup.find_all(class_='news_dsc')):
+            if con_idx<5:
+                news_contents.append(content.get_text().strip())
 
     parse_page(soup)
     

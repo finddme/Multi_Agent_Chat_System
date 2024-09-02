@@ -25,7 +25,7 @@ TAVILY_API_KEY=API_KEY["TAVILY_API_KEY"]
 claude_api_key=API_KEY["claude_api_key"]
 
 hf_login= HF["login"]
-# login(hf_login)
+login(hf_login)
 
 image_gen_endpoint= IMAGE["image_gen_endpoint"]
 

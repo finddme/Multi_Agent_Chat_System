@@ -14,12 +14,12 @@ info_known_actions = {
 }
 
 def info_ReAct(llm,state):
-    global info_react_prompt
     global info_known_actions
     query=state["query"]
     iter_count=state["iter_count"]
     iter_count+=1
-    generator = Generator(llm=llm,system=info_react_prompt)
+    prompt=info_react_prompt(query)
+    generator = Generator(llm=llm,system=prompt)
     loop_res=loop(query=query,generator=generator,known_actions=info_known_actions)
     answer,react_process, action_agent,observations= (lambda x: x)(loop_res)
     return {"query":query,"agent":action_agent,"generate":answer,"react_res":react_process,"observations":observations,"iter_count":iter_count}
