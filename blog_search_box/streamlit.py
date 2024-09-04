@@ -29,10 +29,10 @@ async def run_convo():
     }
     </style>
     """, unsafe_allow_html=True)
-    st.markdown("""**검색어를 입력하세요.**\\
-                :orange[**Law | Ai | conversation | web search | realtime | image generation**]""", 
-                unsafe_allow_html=True 
-                )
+    # st.markdown("""**검색어를 입력하세요.**\\
+    #             :orange[**Law | Ai | conversation | web search | realtime | image generation**]""", 
+    #             unsafe_allow_html=True 
+    #             )
     user_input = st.text_input('')
 
     if user_input:
@@ -70,7 +70,7 @@ async def run_convo():
                     st.image(io.BytesIO(img).getvalue(), caption="Sunrise by the mountains")
             except Exception as e:
                 st.error(f"Error: {e}")
-    st.image("https://finddme.github.io/public/react2.png", caption="search box pipeline")
+    # st.image("https://finddme.github.io/public/react2.png", caption="search box pipeline")
     
 if __name__ == '__main__':
     asyncio.run(run_convo())
