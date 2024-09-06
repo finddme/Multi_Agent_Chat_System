@@ -11,6 +11,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--image', type=str, default='endpoint', choices=["endpoint","model","none"],required=False)
     parser.add_argument('--final-grader', type=str, default='none', choices=["model","hitl","none"], required=False)
+    parser.add_argument('--ai-db-restore', type=str, default='no', choices=["yes","no"], required=False)
 
     args = parser.parse_args()
 
