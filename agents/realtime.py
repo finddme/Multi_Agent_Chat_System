@@ -89,6 +89,8 @@ def get_news(news_titles,news_contents,news_release_date,naver_news_links):
     return crawling_result
 
 def realtime(keyword):
+    res=[]
     news_titles,news_contents,news_release_date,naver_news_links= get_news_with_query(keyword)
     crawling_res= get_news(news_titles,news_contents,news_release_date,naver_news_links)
-    return crawling_res[0]
+    for idx,c in enumerate(crawling_res):
+        if idx==0:return c
