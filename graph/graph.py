@@ -15,7 +15,8 @@ class Graph:
         self.args=args
         global GraphState
         self.node=Node(self.args)
-        ai_db_reload_auto()
+        if args.ai_db_restore=="yes":
+            ai_db_reload_auto()
 
     async def graph_include_grader(self):
         global GraphState
