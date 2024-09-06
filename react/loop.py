@@ -29,6 +29,6 @@ def loop(query, generator,known_actions, max_turns=10):
                 next_prompt = "Observation: {}".format(observation)
                 print('_________________')
         else: break
-        if "Answer" in result and i >1:
+        if "Answer" in result and i >2 and len(observation) !=0:
             break
     return get_final_answer(generator).split("Answer")[-1].strip(":"), react_process, action_agent,observations
